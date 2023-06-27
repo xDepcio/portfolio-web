@@ -1,0 +1,26 @@
+.projects-wrapper {
+    margin-top: 13rem;
+    /* background-color: rebeccapurple; */
+    max-width: 1280px;
+    width: 100%;
+    padding: 1.4rem;
+
+    /* background: linear-gradient(#191A21, #191A21) padding-box,
+        linear-gradient(to right, rgba(255, 107, 107, 1) 0%, rgba(136, 4, 65, 1)) border-box;
+    border-radius: 1.2rem;
+    border: 1px solid transparent; */
+}
+
+.projects-header {
+    color: whitesmoke;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.247);
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.projects-tag::first-letter {
+    color: rgba(255, 107, 107, 1);
+}

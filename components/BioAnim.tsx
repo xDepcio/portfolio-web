@@ -55,7 +55,6 @@ export default function BioAnim() {
         textCycle()
         const textsCycleInterval = setInterval(textCycle, 7000)
 
-
         return () => {
             clearInterval(flickInterval)
             clearInterval(textsCycleInterval)
