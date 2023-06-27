@@ -1,0 +1,37 @@
+.hero-hello {
+    color: #ff6b6b;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    line-height: 100%;
+    font-weight: 300;
+}
+
+.hero-wrapper {
+    margin-top: 10rem;
+}
+
+.hero-name {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 100%;
+    background: linear-gradient(160deg, rgba(255, 107, 107, 1) 0%, rgba(136, 4, 65, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-bio {
+    color: whitesmoke;
+    line-height: 100%;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.post-bio {
+    content: '';
+}
+
+.post-bio.show {
+    background-color: whitesmoke;
+    content: '.';
+}
