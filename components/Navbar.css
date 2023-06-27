@@ -1,0 +1,37 @@
+.nav-outer-wrapper {
+    display: flex;
+    /* background-color: darkcyan; */
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+}
+
+.nav-inner-wrapper {
+    /* background-color: red; */
+    padding: 0 2rem;
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-list {
+    color: whitesmoke;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* background-color: rebeccapurple; */
+    gap: 2rem;
+
+    &>li {
+        list-style: none;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            color: #ff6b6b;
+        }
+    }
+}
