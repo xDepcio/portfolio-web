@@ -9,6 +9,9 @@ export default function Blobs() {
             <div className='blob-2'>
 
             </div>
+            <div className='blob-3'>
+
+            </div>
         </>
     )
 }

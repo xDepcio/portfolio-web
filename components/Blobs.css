@@ -6,7 +6,7 @@
     top: -200px;
     filter: blur(6rem);
     z-index: -1;
-    background: radial-gradient(circle, #ff6b6b50 0%, rgba(41, 53, 86, 0) 100%);
+    background: radial-gradient(circle, #ff6b6b2d 0%, rgba(41, 53, 86, 0) 100%);
     border-radius: 999px;
     animation: blob-scale 20s infinite;
 }
@@ -19,7 +19,20 @@
     top: 300px;
     filter: blur(6rem);
     z-index: -1;
-    background: radial-gradient(circle, rgba(230, 58, 87, 0.212) 0%, rgba(41, 53, 86, 0) 100%);
+    background: radial-gradient(circle, rgba(230, 58, 87, 0.11) 0%, rgba(41, 53, 86, 0) 100%);
+    border-radius: 999px;
+    animation: blob-scale 20s infinite;
+}
+
+.blob-3 {
+    width: 1020px;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 100px;
+    top: 1100px;
+    filter: blur(6rem);
+    z-index: -1;
+    background: radial-gradient(circle, #ff6b6b10 0%, rgba(41, 53, 86, 0) 100%);
     border-radius: 999px;
     animation: blob-scale 20s infinite;
 }
