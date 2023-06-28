@@ -15,6 +15,7 @@ body {
             rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb)); */
     background: #191A21;
     /* overflow-x: hidden; */
+    position: relative;
 }
 
 body,
@@ -22,7 +23,7 @@ html {
     overflow-x: hidden;
 }
 
-/*
+
 ::-webkit-scrollbar {
     width: 7px;
     border-radius: 999px;
@@ -44,4 +45,4 @@ html {
 
 ::-webkit-scrollbar-track:hover {
     background: #cccccc00;
-} */
+}
