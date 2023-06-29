@@ -6,7 +6,7 @@ import Projects from "@/components/Projects";
 export default function Home() {
     return (
         <>
-            <Blobs />
+            {/* <Blobs /> */}
             <div className='flex flex-col items-center'>
                 <Hero />
                 <Projects />

@@ -5,6 +5,7 @@ import ScrollUp from '@/components/ScrollUp'
 import FadeAnimationHandle from '@/components/FadeAnimationHandle'
 import Footer from '@/components/Footer'
 import { Toaster } from 'react-hot-toast'
+import Blobs from '@/components/Blobs'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,6 +22,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={inter.className}>
+                <Blobs />
                 <Toaster />
                 <Navbar />
                 <ScrollUp />
