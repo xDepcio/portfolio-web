@@ -46,3 +46,32 @@ html {
 ::-webkit-scrollbar-track:hover {
     background: #cccccc00;
 }
+
+@keyframes on-scroll-fade-up {
+    0% {
+        visibility: visible;
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        /* scale: 2; */
+        visibility: visible
+    }
+}
+
+@keyframes on-scroll-fade-out-down {
+    0% {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(1rem);
+        visibility: hidden;
+    }
+}

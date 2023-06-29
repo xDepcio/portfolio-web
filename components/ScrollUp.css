@@ -1,0 +1,54 @@
+.scroll-up-wrapper {
+    position: fixed;
+    background: linear-gradient(160deg, rgba(255, 107, 107, 1) 0%, rgba(136, 4, 65, 1) 100%);
+    width: 4rem;
+    aspect-ratio: 1/1;
+    bottom: 1.7vw;
+    right: 1.7vw;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.scroll-arrow {
+    width: 80%;
+    height: 80%;
+    color: whitesmoke;
+}
+
+.scroll-up-wrapper.show {
+    animation-name: on-scroll-fade-up;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.scroll-up-wrapper.hide {
+    animation-name: on-scroll-fade-out-down;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.initial.hide {
+    animation: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .scroll-up-wrapper {
+        visibility: hidden;
+    }
+
+    .scroll-up-wrapper.show {
+        animation: none;
+    }
+
+    .scroll-up-wrapper.hide {
+        animation: none;
+    }
+}
