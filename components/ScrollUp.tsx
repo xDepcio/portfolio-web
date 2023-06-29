@@ -8,7 +8,7 @@ export default function ScrollUp() {
 
     useEffect(() => {
         const scrollUp = document.querySelector('.scroll-up-wrapper')
-        window.addEventListener('scroll', () => {
+        const scrollHandle = () => {
             if (window.scrollY > 500) {
                 scrollUp?.classList.add('show')
                 scrollUp?.classList.remove('hide')
@@ -18,12 +18,19 @@ export default function ScrollUp() {
                 scrollUp?.classList.remove('show')
                 scrollUp?.classList.add('hide')
             }
-        })
-    })
+        }
+
+        window.addEventListener('scroll', scrollHandle)
+
+        return () => {
+            window.removeEventListener('scroll', scrollHandle)
+        }
+
+    }, [])
 
 
     return (
-        <div onClick={() => ScrollUp()} className="scroll-up-wrapper hide initial">
+        <div onClick={() => scroll({ top: 0, behavior: 'smooth' })} className="scroll-up-wrapper hide initial">
             <FontAwesomeIcon className='scroll-arrow' icon={faArrowUp} />
         </div>
     )

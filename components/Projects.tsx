@@ -10,8 +10,8 @@ export const revalidate = 1
 export default function Projects() {
     return (
         <div className="projects-wrapper">
-            <p className={robotoMono.className + " projects-tag"}>{'<projects'}<span>{'>'}</span></p>
-            <p className={robotoMono.className + " projects-tag inner"}>{'<personal projects'}<span>{'>'}</span></p>
+            <p className={robotoMono.className + " projects-tag reveal"}>{'<projects'}<span>{'>'}</span></p>
+            <p className={robotoMono.className + " projects-tag inner reveal"}>{'<personal projects'}<span>{'>'}</span></p>
             <div className='projects-holder'>
                 <ProjectsPane
                     description='Minecraft server webiste with React on frontend, NodeJS for backend and with Sequalize for Database.'
@@ -29,8 +29,8 @@ export default function Projects() {
                     title='Game server webpage'
                 />
             </div>
-            <p className={robotoMono.className + " projects-tag inner"}>{'</personal projects'}<span>{'>'}</span></p>
-            <p className={robotoMono.className + " projects-tag inner"}>{'<study related projects'}<span>{'>'}</span></p>
+            <p className={robotoMono.className + " projects-tag inner reveal"}>{'</personal projects'}<span>{'>'}</span></p>
+            <p className={robotoMono.className + " projects-tag inner reveal"}>{'<study related projects'}<span>{'>'}</span></p>
             <div className='projects-holder'>
                 <ProjectsPane
                     description='Minecraft server webiste with React on frontend, NodeJS for backend and with Sequalize for Database.'
@@ -48,8 +48,8 @@ export default function Projects() {
                     title='Game server webpage'
                 />
             </div>
-            <p className={robotoMono.className + " projects-tag inner"}>{'</study related projects'}<span>{'>'}</span></p>
-            <p className={robotoMono.className + " projects-tag"}>{'</projects'}<span>{'>'}</span></p>
+            <p className={robotoMono.className + " projects-tag inner reveal"}>{'</study related projects'}<span>{'>'}</span></p>
+            <p className={robotoMono.className + " projects-tag reveal"}>{'</projects'}<span>{'>'}</span></p>
         </div>
     )
 }

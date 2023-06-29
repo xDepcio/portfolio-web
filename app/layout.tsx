@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar'
 import './globals.css'
 import { Inter } from 'next/font/google'
 import ScrollUp from '@/components/ScrollUp'
+import FadeAnimationHandle from '@/components/FadeAnimationHandle'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,6 +21,7 @@ export default function RootLayout({
             <body className={inter.className}>
                 <Navbar />
                 <ScrollUp />
+                <FadeAnimationHandle />
                 {children}
             </body>
         </html>

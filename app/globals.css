@@ -47,6 +47,32 @@ html {
     background: #cccccc00;
 }
 
+.reveal {
+    visibility: hidden;
+}
+
+.reveal.active {
+    animation-name: on-scroll-fade-up-2;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes on-scroll-fade-up-2 {
+    0% {
+        visibility: visible;
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        /* scale: 2; */
+        visibility: visible
+    }
+}
+
 @keyframes on-scroll-fade-up {
     0% {
         visibility: visible;

@@ -62,7 +62,7 @@ export default function BioAnim() {
     }, [])
 
     return (
-        <p className={robotoMono.className + ' hero-bio'}>
+        <p className={robotoMono.className + ' hero-bio reveal'}>
             <span>{'>'}{displayedText}</span>
             <span id='del-char' className='post-bio show'>{''}</span>
         </p>

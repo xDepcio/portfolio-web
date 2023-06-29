@@ -5,7 +5,7 @@ import './ProjectsPane.css'
 
 export default function ProjectsPane({ imageUrl, title, description }: { imageUrl: string, title: string, description: string }) {
     return (
-        <div className='single-project'>
+        <div className='single-project reveal'>
             <div className='single-project-images'>
                 <div className="project-visible-overlay">
                     <FontAwesomeIcon className="max-w-[1.2rem]" icon={faAnchor} />
