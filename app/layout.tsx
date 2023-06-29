@@ -3,6 +3,8 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import ScrollUp from '@/components/ScrollUp'
 import FadeAnimationHandle from '@/components/FadeAnimationHandle'
+import Footer from '@/components/Footer'
+import { Toaster } from 'react-hot-toast'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,10 +21,12 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={inter.className}>
+                <Toaster />
                 <Navbar />
                 <ScrollUp />
                 <FadeAnimationHandle />
                 {children}
+                <Footer />
             </body>
         </html>
     )

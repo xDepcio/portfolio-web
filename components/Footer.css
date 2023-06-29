@@ -1,0 +1,49 @@
+footer {
+    color: rgb(177, 177, 177);
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 3rem;
+    margin-bottom: 3rem;
+
+    & h3 {
+        color: whitesmoke;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    & h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 100%;
+        background: linear-gradient(160deg, rgba(255, 107, 107, 1) 0%, rgba(136, 4, 65, 1) 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &>div:not(:last-child) {
+
+        border-right: 1px solid rgb(177, 177, 177);
+        padding-right: 3rem;
+        /* display: flex; */
+        /* flex-direction: column; */
+    }
+
+    & li {
+        cursor: pointer;
+        transition-duration: 0.2s;
+    }
+
+    & li:hover {
+        cursor: pointer;
+        color: whitesmoke;
+    }
+}
+
+.foot-contact li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
