@@ -46,8 +46,4 @@
     padding: 1rem 4rem;
     gap: 1rem;
     flex-wrap: wrap;
-
-    & img {
-        border-radius: 1rem;
-    }
 }

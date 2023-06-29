@@ -1,4 +1,4 @@
-import { faBook } from "@fortawesome/free-solid-svg-icons";
+import { faAnchor, faBook } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import './ProjectsPane.css'
@@ -7,6 +7,10 @@ export default function ProjectsPane({ imageUrl, title, description }: { imageUr
     return (
         <div className='single-project'>
             <div className='single-project-images'>
+                <div className="project-visible-overlay">
+                    <FontAwesomeIcon className="max-w-[1.2rem]" icon={faAnchor} />
+                    <p>Open in new tab</p>
+                </div>
                 <Image
                     alt='project-1'
                     src={imageUrl}

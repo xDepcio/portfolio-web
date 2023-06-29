@@ -10,8 +10,9 @@
     border-radius: 1.2rem;
     border: 1px solid transparent; */
 
-    & .img-1 {
-        /* transform: translateX(-1rem); */
+    & img {
+        border-radius: 1rem;
+
     }
 
     & h3 {
@@ -51,4 +52,33 @@
             color: whitesmoke;
         }
     }
+}
+
+.project-visible-overlay {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    color: #e7e7e7;
+    background-color: #1f1f1f94;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    gap: 0.5rem;
+    cursor: pointer;
+    /* visibility: hidden; */
+    opacity: 0;
+    transition-duration: 0.2s;
+
+}
+
+.single-project-images {
+    position: relative;
+    overflow: hidden;
+}
+
+.single-project-images:hover .project-visible-overlay {
+    /* visibility: visible; */
+    opacity: 1;
 }
