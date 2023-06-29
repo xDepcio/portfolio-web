@@ -11,7 +11,7 @@ export default function SingleFullProject({ title, desc, img, inList, missingLis
 ) {
     return (
         <div className='projects-page-single-project reveal'>
-            <Image src={'/mc-server-tiles.png'} alt='sdas' width={500} height={200} />
+            <Image src={img} alt='sdas' width={500} height={200} />
             <div className="big-project-header-wrapper">
                 <h3 className="big-project-header">{title}</h3>
                 <Link className="code-project" href={'/'}>

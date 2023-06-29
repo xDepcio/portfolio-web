@@ -34,7 +34,7 @@
     box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    align-items: center;
+    align-items: stretch;
     /* padding: 1rem 4rem; */
     gap: 1rem;
     flex-wrap: wrap;

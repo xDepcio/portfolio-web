@@ -4,10 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDiagramNext, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faReact } from '@fortawesome/free-brands-svg-icons'
 import SingleFullProject from './SingleFullProject'
-import { SiNextdotjs, SiSequelize, SiExpress } from 'react-icons/si'
+import { SiNextdotjs, SiSequelize, SiExpress, SiSocketdotio } from 'react-icons/si'
 import { BsStripe } from 'react-icons/bs'
-import { BiLogoJavascript, BiLogoNodejs, BiLogoReact, BiPhone } from 'react-icons/bi'
+import { BiLogoJavascript, BiLogoNodejs, BiLogoReact, BiPhone, BiTestTube } from 'react-icons/bi'
 import { HiOutlineDeviceMobile } from 'react-icons/hi'
+import { LuConstruction } from 'react-icons/lu'
+import { TbBugOff } from 'react-icons/tb'
 
 export default function ProjectsPage() {
     return (
@@ -16,8 +18,8 @@ export default function ProjectsPage() {
                 <h3 className='projects-page-header reveal'>Personal projects</h3>
                 <div className="projects-page-projects">
                     <SingleFullProject
-                        desc='dasdsa'
                         title='Minecraft server webpage'
+                        desc='Website template for Minecraft game server. Sequalize is used as an ORM to store players data and relations between them. Player can buy items which are assigned to a provided nickname from the shop implemented using Stripe API. Site is mostly finished, but is missing RWD which is due to my lost of interest in this project.'
                         img='/mc-server-tiles.png'
                         inList={[
                             ['JavaScript', <BiLogoJavascript className="text-yellow-400" />],
@@ -32,9 +34,9 @@ export default function ProjectsPage() {
                         ]}
                     />
                     <SingleFullProject
-                        desc='dasdsa'
-                        title='Minecraft server webpage'
-                        img='/mc-server-tiles.png'
+                        title='Eccomerce website'
+                        desc="This is an eCommerce website template, featuring a user authentication system built from scratch. The more sophisticated back-end is powered by Express and Sequelize. The site facilitates product browsing with filtering based on product specifications. Users are able to leave reviews, view their order history, add shipping addresses, and rate other users' reviews. The payment system is implemented using the Stripe API. Although the site is still a work-in-progress with some existing bugs and missing features, the scope of this project turned out to be quite extensive. Unfortunately, the scale was a bit too ambitious, leading to a decline in my motivation to see it through to completion."
+                        img='/ecommerce/ecc-tiles.png'
                         inList={[
                             ['JavaScript', <BiLogoJavascript />],
                             ['React', <BiLogoReact />],
@@ -44,23 +46,25 @@ export default function ProjectsPage() {
                             ['Stripe API', <BsStripe />]
                         ]}
                         missingList={[
-                            ['RWD', <HiOutlineDeviceMobile />],
+                            ['Some RWD', <HiOutlineDeviceMobile />],
+                            ['Features', <LuConstruction />],
+                            ['Bugfixing', <TbBugOff />],
                         ]}
                     />
                     <SingleFullProject
                         desc='dasdsa'
                         title='Minecraft server webpage'
-                        img='/mc-server-tiles.png'
+                        img='/boss-monster/boss-tiles.png'
                         inList={[
                             ['JavaScript', <BiLogoJavascript />],
                             ['React', <BiLogoReact />],
                             ['NodeJS', <BiLogoNodejs />],
-                            ['Sequelize', <SiSequelize />],
                             ['Express', <SiExpress />],
-                            ['Stripe API', <BsStripe />]
+                            ['Socket.io', <SiSocketdotio />]
                         ]}
                         missingList={[
-                            ['RWD', <HiOutlineDeviceMobile />],
+                            ['Features', <LuConstruction />],
+                            ['Better tests', <BiTestTube />]
                         ]}
                     />
                 </div>
