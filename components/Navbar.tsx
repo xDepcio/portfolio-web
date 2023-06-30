@@ -26,7 +26,9 @@ export default function Navbar() {
                     </div>
                 </Link>
                 <ul className={robotoMono.className + ' nav-list'}>
-                    <li>{'about'}</li>
+                    <Link href={'/about'}>
+                        <li>{'about'}</li>
+                    </Link>
                     <Link href={'/projects'}>
                         <li>{'projects'}</li>
                     </Link>

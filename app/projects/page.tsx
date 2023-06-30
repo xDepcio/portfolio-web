@@ -14,6 +14,7 @@ import { MdContentCopy } from 'react-icons/md'
 import { PiCatFill } from 'react-icons/pi'
 import { TfiVector } from 'react-icons/tfi'
 import Link from 'next/link'
+import AbsoluteBorders from '@/components/AbsoluteBorders'
 
 export default function ProjectsPage() {
     return (
@@ -27,12 +28,9 @@ export default function ProjectsPage() {
                     </Link>
                 </div>
                 <div id='personal-projects' className="projects-page-projects">
-                    <div className='bd-up-1 reveal' />
-                    <div className='bd-up-2 reveal' />
-                    <div className='bd-down-l-1 reveal' />
-                    <div className='bd-down-l-2 reveal' />
-                    <div className='bd-down-r-1 reveal' />
-                    <div className='bd-down-r-2 reveal' />
+                    <AbsoluteBorders side='top-right' />
+                    <AbsoluteBorders side='bottom-right' />
+                    <AbsoluteBorders side='bottom-left' />
                     <SingleFullProject
                         title='Minecraft server webpage'
                         desc='Website template for Minecraft game server. Sequalize is used as an ORM to store players data and relations between them. Player can buy items which are assigned to a provided nickname from the shop implemented using Stripe API. Site is mostly finished, but is missing RWD which is due to my lost of interest in this project.'
@@ -92,12 +90,9 @@ export default function ProjectsPage() {
                     </Link>
                 </div>
                 <div className="projects-page-projects mb-28">
-                    <div className='bd-up-1 reveal' />
-                    <div className='bd-up-2 reveal' />
-                    <div className='bd-down-l-1 reveal' />
-                    <div className='bd-down-l-2 reveal' />
-                    <div className='bd-down-r-1 reveal' />
-                    <div className='bd-down-r-2 reveal' />
+                    <AbsoluteBorders side='top-right' />
+                    <AbsoluteBorders side='bottom-right' />
+                    <AbsoluteBorders side='bottom-left' />
                     <SingleFullProject
                         title='Tabletop RPG'
                         desc={`Recreation of my all time favourite tabletop RPG game "boss monsters" into a digital platform. The project leverages the power of React for the front-end, and brings it online through the use of NodeJS, Express and Socket.io. The site enables players to create a room and play with their friends. The inherently complex nature and spontaneous style of the game make it a challenging task to adapt it into a video game. However, the main foundations have already been laid; what remains is to add the remaining cards, a task made simpler due to the already implemented systems. Out of all the projects I've undertaken outside of university, this has been the most enjoyable to work on. The challenge of implementing an entire system for a tabletop game, including its asynchronous rules, has been truly rewarding. If you're interested in contributing to the completion of this project and need my assistance, please don't hesitate to reach out. I'd be more than happy to help you!`}
