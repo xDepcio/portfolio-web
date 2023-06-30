@@ -1,0 +1,34 @@
+#foot-contact.contact-clicked {
+    position: relative;
+    background-color: transparent;
+}
+
+#foot-contact.contact-clicked::after {
+    content: '';
+    width: 120%;
+    height: 120%;
+    background-color: #191A21;
+    /* z-index: 2; */
+    z-index: -1;
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    border-radius: 1rem;
+    animation: pulse-color 1s;
+    animation-delay: 1s;
+}
+
+
+@keyframes pulse-color {
+    0% {
+        background-color: #191A21;
+    }
+
+    50% {
+        background-color: #272A35;
+    }
+
+    100% {
+        background-color: #191A21;
+    }
+}

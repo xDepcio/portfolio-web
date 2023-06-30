@@ -28,7 +28,7 @@ export default function Footer() {
                     </li>
                 </ul>
             </div>
-            <div className="foot-contact">
+            <div id="foot-contact" className="foot-contact">
                 <h3>Contact</h3>
                 <ul>
                     <FooterEmail />

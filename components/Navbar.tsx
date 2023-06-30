@@ -4,6 +4,7 @@ import Link from 'next/link'
 import RocketSvg from './resources/RocketSvg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFire, faRocket } from '@fortawesome/free-solid-svg-icons'
+import ContactNav from './ContactNav'
 
 const roboto = Roboto({
     weight: ['100', '300', '400', '500', '700', '900'],
@@ -32,7 +33,8 @@ export default function Navbar() {
                     <Link href={'/projects'}>
                         <li>{'projects'}</li>
                     </Link>
-                    <li>{'contact'}</li>
+                    <ContactNav />
+                    {/* <li>{'contact'}</li> */}
                 </ul>
 
             </div>
