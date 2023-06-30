@@ -45,7 +45,7 @@ export default function AboutPage() {
                     </div>
                     <div>
                         <BiSolidCity />
-                        <p>Warsaw - Poland</p>
+                        <p className="whitespace-nowrap">Warsaw - Poland</p>
                     </div>
                 </div>
                 <div className="reveal about-edu">
@@ -55,7 +55,7 @@ export default function AboutPage() {
                             <LuSchool className="school-icon" />
                             <div>
                                 <h5>High School</h5>
-                                <p className="text-[0.8rem] text-end">2019 - 2022</p>
+                                <p className="text-[0.8rem] text-end whitespace-nowrap">2019 - 2022</p>
                             </div>
                         </div>
                         <BiArrowToRight className="edu-arrow" />
@@ -64,8 +64,8 @@ export default function AboutPage() {
                             <div>
                                 <h5>Warsaw University of Technology - EITI faculty</h5>
                                 <div className="uni-degree">
-                                    <p>Computer Science</p>
-                                    <p>2022 - present</p>
+                                    <p className="whitespace-nowrap">Computer Science</p>
+                                    <p className="whitespace-nowrap">2022 - present</p>
                                 </div>
                             </div>
                         </div>

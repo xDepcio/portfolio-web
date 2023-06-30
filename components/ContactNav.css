@@ -7,7 +7,7 @@
     content: '';
     width: 120%;
     height: 120%;
-    background-color: #191A21;
+    background-color: #191a2100;
     /* z-index: 2; */
     z-index: -1;
     position: absolute;
@@ -21,7 +21,7 @@
 
 @keyframes pulse-color {
     0% {
-        background-color: #191A21;
+        background-color: #191a2100;
     }
 
     50% {
@@ -29,6 +29,6 @@
     }
 
     100% {
-        background-color: #191A21;
+        background-color: #191a2100;
     }
 }

@@ -285,3 +285,67 @@
         color: whitesmoke;
     }
 }
+
+@media screen and (max-width: 1150px) {
+
+    .about-wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+
+        & img {
+            max-width: 5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .about-info-section {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    .about-wrapper {
+        padding: 1rem;
+    }
+
+    .about-location {
+        flex-basis: 50%;
+    }
+
+    .about-edu-schools svg {
+        min-width: 1rem;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .about-info-section {
+        justify-content: space-between;
+    }
+
+    .about-info-section {
+        & .about-edu-schools {
+            flex-direction: column;
+            align-items: stretch;
+
+            &>svg {
+                rotate: 90deg;
+            }
+        }
+    }
+
+
+    .edu-stage-wrapper {
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width: 340px) {
+    .edu-stage-wrapper svg {
+        display: none;
+    }
+}
