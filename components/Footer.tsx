@@ -17,9 +17,15 @@ export default function Footer() {
             <div className="foot-nav">
                 <h3>Page navigation</h3>
                 <ul>
-                    <li>Home</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                    <li>
+                        <Link href={'/'}>Home</Link>
+                    </li>
+                    <li>
+                        <Link href={'/about'}>About</Link>
+                    </li>
+                    <li>
+                        <Link href={'/projects'}>Projects</Link>
+                    </li>
                 </ul>
             </div>
             <div className="foot-contact">
