@@ -82,3 +82,16 @@
     /* visibility: visible; */
     opacity: 1;
 }
+
+@media screen and (max-width: 580px) {
+    .single-project {
+        & h3 {
+            font-size: 1rem;
+        }
+    }
+
+    .project-desc,
+    .project-hero>p {
+        font-size: 0.8rem;
+    }
+}

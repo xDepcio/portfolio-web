@@ -48,3 +48,29 @@
     gap: 1rem;
     flex-wrap: wrap;
 }
+
+@media screen and (max-width: 580px) {
+    .projects-wrapper {
+        padding: 1rem;
+    }
+
+    .projects-holder {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .projects-holder {
+        padding: 1rem 3rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .projects-holder {
+        padding: 1rem 2.5rem;
+    }
+
+    .projects-tag.inner {
+        margin-left: 1.5rem;
+    }
+}
