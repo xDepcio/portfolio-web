@@ -36,3 +36,37 @@
     background-color: whitesmoke;
     content: '.';
 }
+
+@media screen and (max-width: 735px) {
+    .hero-name {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 596px) {
+    .hero-name {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 457px) {
+    .hero-name {
+        font-size: 2.5rem;
+    }
+
+    .hero-hello,
+    .hero-bio {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 388px) {
+    .hero-name {
+        font-size: 2.2rem;
+    }
+
+    .hero-hello,
+    .hero-bio {
+        font-size: 1.2rem;
+    }
+}
