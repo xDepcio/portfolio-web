@@ -23,7 +23,7 @@ export default function ProjectsPage() {
                 <div className='flex items-baseline gap-3'>
                     <h3 className='projects-page-header reveal'>Personal projects</h3>
                     <Link className='reveal flex items-center justify-center gap-1 text-[#b1b1b1] text-[0.8rem]' href="https://github.com/xDepcio" target='_blank'>
-                        <p>See all on Github</p>
+                        <p className='whitespace-nowrap'>See all on Github</p>
                         <BsGithub />
                     </Link>
                 </div>
@@ -32,7 +32,7 @@ export default function ProjectsPage() {
                     <AbsoluteBorders side='bottom-right' />
                     <AbsoluteBorders side='bottom-left' />
                     <SingleFullProject
-                        title='Minecraft server webpage'
+                        title='Minecraft server site'
                         desc='Website template for Minecraft game server. Sequalize is used as an ORM to store players data and relations between them. Player can buy items which are assigned to a provided nickname from the shop implemented using Stripe API. Site is mostly finished, but is missing RWD which is due to my lost of interest in this project.'
                         img='/mc-server-tiles.png'
                         inList={[
@@ -48,7 +48,7 @@ export default function ProjectsPage() {
                         ]}
                     />
                     <SingleFullProject
-                        title='Eccomerce website'
+                        title='Eccomerce site'
                         desc="This is an eCommerce website template, featuring a user authentication system built from scratch. The more sophisticated back-end is powered by Express and Sequelize. The site facilitates product browsing with filtering based on product specifications. Users are able to leave reviews, view their order history, add shipping addresses, and rate other users' reviews. The payment system is implemented using the Stripe API. Although the site is still a work-in-progress with some existing bugs and missing features, the scope of this project turned out to be quite extensive. Unfortunately, the scale was a bit too ambitious, leading to a decline in my motivation to see it through to completion."
                         img='/ecommerce/ecc-tiles.png'
                         inList={[
@@ -85,7 +85,7 @@ export default function ProjectsPage() {
                 <div className='flex items-baseline gap-3 mt-28'>
                     <h3 className='projects-page-header reveal'>Projects for university</h3>
                     <Link className='reveal flex items-center justify-center gap-1 text-[#b1b1b1] text-[0.8rem]' href="https://gitlab-stud.elka.pw.edu.pl/adrwal" target='_blank'>
-                        <p>See all on Gitlab</p>
+                        <p className='whitespace-nowrap'>See all on Gitlab</p>
                         <SiGitlab />
                     </Link>
                 </div>
