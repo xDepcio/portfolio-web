@@ -34,6 +34,12 @@ export default function AboutPage() {
                 <div className="info-blob-1" />
                 <div className="info-blob-2" />
                 {/* </div> */}
+                <div className="cv-about cv-top flex items-center gap-1 place-self-end self-end mt-auto">
+                    <Link className="flex items-center gap-1" href={'/api/cv'}>
+                        <p>Curriculum Vitae</p>
+                        <HiOutlineDocument />
+                    </Link>
+                </div>
                 <div className="reveal">
                     <h4>Age</h4>
                     <p>20</p>
@@ -62,7 +68,7 @@ export default function AboutPage() {
                         <div className="edu-stage-wrapper">
                             <LuSchool className="uni-icon" />
                             <div>
-                                <h5>Warsaw University of Technology - EITI faculty</h5>
+                                <h5>Warsaw University of Technology</h5>
                                 <div className="uni-degree">
                                     <p className="whitespace-nowrap">Computer Science</p>
                                     <p className="whitespace-nowrap">2022 - present</p>
@@ -126,18 +132,32 @@ export default function AboutPage() {
             <section className="about-desc reveal">
                 <div className="desc-blob-1" />
                 <div className="desc-blob-2" />
-                <div className="about-desc-header-wrapper flex justify-center gap-3">
+                <div className="reveal about-desc-header-wrapper flex justify-center gap-3">
                     <Link href={'https://github.com/xDepcio'} className="flex items-center gap-1 text-[0.8rem]">
                         <BsGithub />
                         <p>See Github</p>
                     </Link>
-                    <h3 className="reveal about-desc-proj-head">Recent projects</h3>
+                    <h3 className="about-desc-proj-head">About me</h3>
                     <Link href={'https://gitlab-stud.elka.pw.edu.pl/adrwal'} className="flex items-center gap-1 text-[0.8rem]">
                         <LuGitlab />
                         <p>See Gitlab</p>
                     </Link>
                 </div>
-                <ul className="about-projects-wrapper">
+                <div className="about-me-desc-wrapper">
+                    {/* <h3>Studies</h3> */}
+                    <p className="reveal">
+                        {`In October 2022, I started studying Computer Science at the Warsaw University of Technology.
+                        As of the time of writing this, I have successfully completed my second semester and I'm
+                        scheduled to start my third semester in October 2023.`}
+                    </p>
+                    <p className="reveal">
+                        {`So far, at university, I've learned core programming paradigms,
+                        software design patterns, low-level programming, data structures, algorithms, and a whole bunch more fascinating stuff.
+                        But what really gets my gears turning is web development, something I've been teaching myself outside of school.
+                        I'm pretty hooked on it, mainly due to the fact that it allows me to create, and ship most of the ideas I have.`}
+                    </p>
+                </div>
+                {/* <ul className="about-projects-wrapper">
                     <li className="reveal">Game server site</li>
                     <li className="reveal">Eccomerce site</li>
                     <li className="reveal">Tabletop RPG</li>
@@ -145,8 +165,8 @@ export default function AboutPage() {
                     <li className="reveal">Chess app</li>
                     <li className="reveal">Flashcards app</li>
                     <li className="reveal">Mobile app for visually impaired</li>
-                </ul>
-                <div className="cv-about flex items-center gap-1 place-self-end self-end mt-auto">
+                </ul> */}
+                <div className="cv-about cv-bottom flex items-center gap-1 place-self-end self-end mt-auto">
                     <Link className="flex items-center gap-1" href={'/api/cv'}>
                         <p>Curriculum Vitae</p>
                         <HiOutlineDocument />

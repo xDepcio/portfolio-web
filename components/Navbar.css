@@ -152,3 +152,9 @@
         left: 10px;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .nav-inner-wrapper {
+        padding: 0 1rem;
+    }
+}
