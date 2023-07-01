@@ -94,33 +94,33 @@ export default function ProjectsPage() {
                     <AbsoluteBorders side='bottom-right' />
                     <AbsoluteBorders side='bottom-left' />
                     <SingleFullProject
-                        title='Tabletop RPG'
+                        title='C++ Chess app'
                         desc={`Recreation of my all time favourite tabletop RPG game "boss monsters" into a digital platform. The project leverages the power of React for the front-end, and brings it online through the use of NodeJS, Express and Socket.io. The site enables players to create a room and play with their friends. The inherently complex nature and spontaneous style of the game make it a challenging task to adapt it into a video game. However, the main foundations have already been laid; what remains is to add the remaining cards, a task made simpler due to the already implemented systems. Out of all the projects I've undertaken outside of university, this has been the most enjoyable to work on. The challenge of implementing an entire system for a tabletop game, including its asynchronous rules, has been truly rewarding. If you're interested in contributing to the completion of this project and need my assistance, please don't hesitate to reach out. I'd be more than happy to help you!`}
-                        img='/boss-monster/boss-tiles.png'
+                        img='/chess/chess-tiles-16-9.png'
                         inList={[
                             ['C++', <SiCplusplus key={1} />],
                             ['Qt', <SiQt key={1} />],
                             ['Visual Studio 2022', <SiVisualstudio key={1} />],
                         ]}
                         missingList={[
-                            ['Nothing 25/25 pts. for this bad boy', <PiCatFill key={1} />],
+                            // ['Nothing 25/25 pts. for this bad boy', <PiCatFill key={1} />],
                         ]}
                     />
                     <SingleFullProject
-                        title='Tabletop RPG'
+                        title='Python flashcards app'
                         desc={`Recreation of my all time favourite tabletop RPG game "boss monsters" into a digital platform. The project leverages the power of React for the front-end, and brings it online through the use of NodeJS, Express and Socket.io. The site enables players to create a room and play with their friends. The inherently complex nature and spontaneous style of the game make it a challenging task to adapt it into a video game. However, the main foundations have already been laid; what remains is to add the remaining cards, a task made simpler due to the already implemented systems. Out of all the projects I've undertaken outside of university, this has been the most enjoyable to work on. The challenge of implementing an entire system for a tabletop game, including its asynchronous rules, has been truly rewarding. If you're interested in contributing to the completion of this project and need my assistance, please don't hesitate to reach out. I'd be more than happy to help you!`}
-                        img='/boss-monster/boss-tiles.png'
+                        img='/flashcards/flashcards-tiles-16-9.png'
                         inList={[
                             ['Python', <SiPython key={1} />],
                             ['PyQt', <SiQt key={1} />],
                         ]}
                         missingList={[
-                            ['Content', <MdContentCopy key={1} />],
-                            ['Better tests', <BiTestTube key={1} />]
+                            // ['Content', <MdContentCopy key={1} />],
+                            // ['Better tests', <BiTestTube key={1} />]
                         ]}
                     />
                     <SingleFullProject
-                        title='Tabletop RPG'
+                        title='Tdsadabletop RPG'
                         desc={`Recreation of my all time favourite tabletop RPG game "boss monsters" into a digital platform. The project leverages the power of React for the front-end, and brings it online through the use of NodeJS, Express and Socket.io. The site enables players to create a room and play with their friends. The inherently complex nature and spontaneous style of the game make it a challenging task to adapt it into a video game. However, the main foundations have already been laid; what remains is to add the remaining cards, a task made simpler due to the already implemented systems. Out of all the projects I've undertaken outside of university, this has been the most enjoyable to work on. The challenge of implementing an entire system for a tabletop game, including its asynchronous rules, has been truly rewarding. If you're interested in contributing to the completion of this project and need my assistance, please don't hesitate to reach out. I'd be more than happy to help you!`}
                         img='/boss-monster/boss-tiles.png'
                         inList={[

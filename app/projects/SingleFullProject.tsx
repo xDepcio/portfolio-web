@@ -32,18 +32,22 @@ export default function SingleFullProject({ title, desc, img, inList, missingLis
                     )
                 })}
             </ul>
-            <h3 className="project-page-sub-header">Whats missing?</h3>
-            <ul>
-                {missingList.map((item, index) => {
-                    return (
-                        <li key={index}>
-                            <FontAwesomeIcon className="max-w-[0.8rem] text-red-400" icon={faMinus} />
-                            <p>{item[0]}</p>
-                            {item[1]}
-                        </li>
-                    )
-                })}
-            </ul>
+            {missingList.length > 0 && (
+                <>
+                    <h3 className="project-page-sub-header">Whats missing?</h3>
+                    <ul>
+                        {missingList.map((item, index) => {
+                            return (
+                                <li key={index}>
+                                    <FontAwesomeIcon className="max-w-[0.8rem] text-red-400" icon={faMinus} />
+                                    <p>{item[0]}</p>
+                                    {item[1]}
+                                </li>
+                            )
+                        })}
+                    </ul>
+                </>
+            )}
         </div >
     )
 }
