@@ -146,9 +146,11 @@ export default function AboutPage() {
                     <li className="reveal">Flashcards app</li>
                     <li className="reveal">Mobile app for visually impaired</li>
                 </ul>
-                <div className="flex items-center gap-1 underline place-self-end self-end mt-auto">
-                    <p>Curriculum Vitae</p>
-                    <HiOutlineDocument />
+                <div className="cv-about flex items-center gap-1 place-self-end self-end mt-auto">
+                    <Link className="flex items-center gap-1" href={'/api/cv'}>
+                        <p>Curriculum Vitae</p>
+                        <HiOutlineDocument />
+                    </Link>
                 </div>
                 {/* <AbsoluteBorders side="bottom-right" /> */}
                 {/* <AbsoluteBorders side="top-left" /> */}

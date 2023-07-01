@@ -286,6 +286,17 @@
     }
 }
 
+.cv-about {
+    transition-duration: 0.2s;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.cv-about:hover {
+
+    color: whitesmoke;
+}
+
 @media screen and (max-width: 1150px) {
 
     .about-wrapper {
