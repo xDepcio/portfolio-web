@@ -21,7 +21,7 @@ export default function AboutPage() {
                     height={100}
                 />
                 <div className="reveal flex flex-col">
-                    <p>Hi, I'm</p>
+                    <p>{`Hi, I'm`}</p>
                     <h2 className="about-name">Aleksander Drwal</h2>
                 </div>
                 {/* <AbsoluteBorders side="bottom-left" />

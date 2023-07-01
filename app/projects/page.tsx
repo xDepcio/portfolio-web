@@ -36,15 +36,15 @@ export default function ProjectsPage() {
                         desc='Website template for Minecraft game server. Sequalize is used as an ORM to store players data and relations between them. Player can buy items which are assigned to a provided nickname from the shop implemented using Stripe API. Site is mostly finished, but is missing RWD which is due to my lost of interest in this project.'
                         img='/mc-server-tiles.png'
                         inList={[
-                            ['JavaScript', <BiLogoJavascript className="text-yellow-400" />],
-                            ['React', <BiLogoReact className="text-blue-400" />],
-                            ['NodeJS', <BiLogoNodejs className="text-green-500" />],
-                            ['Sequelize', <SiSequelize className="text-blue-400" />],
-                            ['Express', <SiExpress />],
-                            ['Stripe API', <BsStripe />]
+                            ['JavaScript', <BiLogoJavascript key={1} className="text-yellow-400" />],
+                            ['React', <BiLogoReact key={2} className="text-blue-400" />],
+                            ['NodeJS', <BiLogoNodejs key={3} className="text-green-500" />],
+                            ['Sequelize', <SiSequelize key={4} className="text-blue-400" />],
+                            ['Express', <SiExpress key={5} />],
+                            ['Stripe API', <BsStripe key={6} />]
                         ]}
                         missingList={[
-                            ['RWD', <HiOutlineDeviceMobile />],
+                            ['RWD', <HiOutlineDeviceMobile key={1} />],
                         ]}
                     />
                     <SingleFullProject
@@ -52,17 +52,17 @@ export default function ProjectsPage() {
                         desc="This is an eCommerce website template, featuring a user authentication system built from scratch. The more sophisticated back-end is powered by Express and Sequelize. The site facilitates product browsing with filtering based on product specifications. Users are able to leave reviews, view their order history, add shipping addresses, and rate other users' reviews. The payment system is implemented using the Stripe API. Although the site is still a work-in-progress with some existing bugs and missing features, the scope of this project turned out to be quite extensive. Unfortunately, the scale was a bit too ambitious, leading to a decline in my motivation to see it through to completion."
                         img='/ecommerce/ecc-tiles.png'
                         inList={[
-                            ['JavaScript', <BiLogoJavascript />],
-                            ['React', <BiLogoReact />],
-                            ['NodeJS', <BiLogoNodejs />],
-                            ['Sequelize', <SiSequelize />],
-                            ['Express', <SiExpress />],
-                            ['Stripe API', <BsStripe />]
+                            ['JavaScript', <BiLogoJavascript key={1} />],
+                            ['React', <BiLogoReact key={1} />],
+                            ['NodeJS', <BiLogoNodejs key={1} />],
+                            ['Sequelize', <SiSequelize key={1} />],
+                            ['Express', <SiExpress key={1} />],
+                            ['Stripe API', <BsStripe key={1} />]
                         ]}
                         missingList={[
-                            ['Some RWD', <HiOutlineDeviceMobile />],
-                            ['Features', <LuConstruction />],
-                            ['Bugfixing', <TbBugOff />],
+                            ['Some RWD', <HiOutlineDeviceMobile key={1} />],
+                            ['Features', <LuConstruction key={1} />],
+                            ['Bugfixing', <TbBugOff key={1} />],
                         ]}
                     />
                     <SingleFullProject
@@ -70,15 +70,15 @@ export default function ProjectsPage() {
                         desc={`Recreation of my all time favourite tabletop RPG game "boss monsters" into a digital platform. The project leverages the power of React for the front-end, and brings it online through the use of NodeJS, Express and Socket.io. The site enables players to create a room and play with their friends. The inherently complex nature and spontaneous style of the game make it a challenging task to adapt it into a video game. However, the main foundations have already been laid; what remains is to add the remaining cards, a task made simpler due to the already implemented systems. Out of all the projects I've undertaken outside of university, this has been the most enjoyable to work on. The challenge of implementing an entire system for a tabletop game, including its asynchronous rules, has been truly rewarding. If you're interested in contributing to the completion of this project and need my assistance, please don't hesitate to reach out. I'd be more than happy to help you!`}
                         img='/boss-monster/boss-tiles.png'
                         inList={[
-                            ['JavaScript', <BiLogoJavascript />],
-                            ['React', <BiLogoReact />],
-                            ['NodeJS', <BiLogoNodejs />],
-                            ['Express', <SiExpress />],
-                            ['Socket.io', <SiSocketdotio />]
+                            ['JavaScript', <BiLogoJavascript key={1} />],
+                            ['React', <BiLogoReact key={1} />],
+                            ['NodeJS', <BiLogoNodejs key={1} />],
+                            ['Express', <SiExpress key={1} />],
+                            ['Socket.io', <SiSocketdotio key={1} />]
                         ]}
                         missingList={[
-                            ['Content', <MdContentCopy />],
-                            ['Better tests', <BiTestTube />]
+                            ['Content', <MdContentCopy key={1} />],
+                            ['Better tests', <BiTestTube key={1} />]
                         ]}
                     />
                 </div>
@@ -98,12 +98,12 @@ export default function ProjectsPage() {
                         desc={`Recreation of my all time favourite tabletop RPG game "boss monsters" into a digital platform. The project leverages the power of React for the front-end, and brings it online through the use of NodeJS, Express and Socket.io. The site enables players to create a room and play with their friends. The inherently complex nature and spontaneous style of the game make it a challenging task to adapt it into a video game. However, the main foundations have already been laid; what remains is to add the remaining cards, a task made simpler due to the already implemented systems. Out of all the projects I've undertaken outside of university, this has been the most enjoyable to work on. The challenge of implementing an entire system for a tabletop game, including its asynchronous rules, has been truly rewarding. If you're interested in contributing to the completion of this project and need my assistance, please don't hesitate to reach out. I'd be more than happy to help you!`}
                         img='/boss-monster/boss-tiles.png'
                         inList={[
-                            ['C++', <SiCplusplus />],
-                            ['Qt', <SiQt />],
-                            ['Visual Studio 2022', <SiVisualstudio />],
+                            ['C++', <SiCplusplus key={1} />],
+                            ['Qt', <SiQt key={1} />],
+                            ['Visual Studio 2022', <SiVisualstudio key={1} />],
                         ]}
                         missingList={[
-                            ['Nothing 25/25 pts. for this bad boy', <PiCatFill />],
+                            ['Nothing 25/25 pts. for this bad boy', <PiCatFill key={1} />],
                         ]}
                     />
                     <SingleFullProject
@@ -111,12 +111,12 @@ export default function ProjectsPage() {
                         desc={`Recreation of my all time favourite tabletop RPG game "boss monsters" into a digital platform. The project leverages the power of React for the front-end, and brings it online through the use of NodeJS, Express and Socket.io. The site enables players to create a room and play with their friends. The inherently complex nature and spontaneous style of the game make it a challenging task to adapt it into a video game. However, the main foundations have already been laid; what remains is to add the remaining cards, a task made simpler due to the already implemented systems. Out of all the projects I've undertaken outside of university, this has been the most enjoyable to work on. The challenge of implementing an entire system for a tabletop game, including its asynchronous rules, has been truly rewarding. If you're interested in contributing to the completion of this project and need my assistance, please don't hesitate to reach out. I'd be more than happy to help you!`}
                         img='/boss-monster/boss-tiles.png'
                         inList={[
-                            ['Python', <SiPython />],
-                            ['PyQt', <SiQt />],
+                            ['Python', <SiPython key={1} />],
+                            ['PyQt', <SiQt key={1} />],
                         ]}
                         missingList={[
-                            ['Content', <MdContentCopy />],
-                            ['Better tests', <BiTestTube />]
+                            ['Content', <MdContentCopy key={1} />],
+                            ['Better tests', <BiTestTube key={1} />]
                         ]}
                     />
                     <SingleFullProject
@@ -124,10 +124,10 @@ export default function ProjectsPage() {
                         desc={`Recreation of my all time favourite tabletop RPG game "boss monsters" into a digital platform. The project leverages the power of React for the front-end, and brings it online through the use of NodeJS, Express and Socket.io. The site enables players to create a room and play with their friends. The inherently complex nature and spontaneous style of the game make it a challenging task to adapt it into a video game. However, the main foundations have already been laid; what remains is to add the remaining cards, a task made simpler due to the already implemented systems. Out of all the projects I've undertaken outside of university, this has been the most enjoyable to work on. The challenge of implementing an entire system for a tabletop game, including its asynchronous rules, has been truly rewarding. If you're interested in contributing to the completion of this project and need my assistance, please don't hesitate to reach out. I'd be more than happy to help you!`}
                         img='/boss-monster/boss-tiles.png'
                         inList={[
-                            ['C', <SiC />],
-                            ['Allegro 5', <TfiVector />],
-                            ['x86', <BsCpuFill />],
-                            ['RISC-V', <BsCpu />],
+                            ['C', <SiC key={1} />],
+                            ['Allegro 5', <TfiVector key={1} />],
+                            ['x86', <BsCpuFill key={1} />],
+                            ['RISC-V', <BsCpu key={1} />],
                         ]}
                         missingList={[
                             // ['Content', <MdContentCopy />],
