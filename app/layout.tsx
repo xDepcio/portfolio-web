@@ -6,6 +6,7 @@ import FadeAnimationHandle from '@/components/FadeAnimationHandle'
 import Footer from '@/components/Footer'
 import { Toaster } from 'react-hot-toast'
 import Blobs from '@/components/Blobs'
+import NextTopLoader from 'nextjs-toploader';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +23,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={inter.className}>
+                <NextTopLoader color='#ff6b6b' />
                 <Blobs />
                 <Toaster />
                 <Navbar />
