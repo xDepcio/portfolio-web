@@ -2,15 +2,20 @@ import { faAnchor, faBook } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import './ProjectsPane.css'
+import { ReactNode } from "react";
 
-export default function ProjectsPane({ imageUrl, title, description }: { imageUrl: string, title: string, description: string }) {
+export default function ProjectsPane({ imageUrl, title, description, overlayText, overlayIcon }:
+    { imageUrl: string, title: string, description: string, overlayText?: string, overlayIcon?: ReactNode }) {
     return (
         <div className='single-project reveal'>
             <div className='single-project-images'>
-                <div className="project-visible-overlay">
-                    <FontAwesomeIcon className="max-w-[1.2rem]" icon={faAnchor} />
-                    <p>Open in new tab</p>
-                </div>
+                {overlayText && (
+                    <div className="project-visible-overlay">
+                        {overlayIcon!}
+                        {/* <FontAwesomeIcon className="max-w-[1.2rem]" icon={faAnchor} /> */}
+                        <p>{overlayText}</p>
+                    </div>
+                )}
                 <Image
                     alt='project-1'
                     src={imageUrl}
