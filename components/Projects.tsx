@@ -20,6 +20,7 @@ export default function Projects() {
                     title='Game server site'
                     overlayText='See code'
                     overlayIcon={<BsCodeSlash />}
+                    overlayLink='https://github.com/xDepcio/mc-website-full'
                 />
                 <ProjectsPane
                     description='Personal portfolio site made with NextJS and TailwindCSS.'
@@ -27,6 +28,7 @@ export default function Projects() {
                     title='Personal portfolio'
                     overlayText='See code'
                     overlayIcon={<BsCodeSlash />}
+                    overlayLink='https://github.com/xDepcio/portfolio-web'
                 />
                 <ProjectsPane
                     description='Eccomerce site with React on frontend, NodeJS on backend with Sequalize for Database and with Stripe for payments.'
@@ -34,6 +36,7 @@ export default function Projects() {
                     title='Ecommerce site'
                     overlayText='See code'
                     overlayIcon={<BsCodeSlash />}
+                    overlayLink='https://github.com/xDepcio/eccomerce_store'
                 />
                 <ProjectsPane
                     description='Multiplayer tabletop RPG game with React on frontend, NodeJS on backend and with Socket.io for realtime communication.'
@@ -41,6 +44,7 @@ export default function Projects() {
                     title='Tabletop RPG'
                     overlayText='See code'
                     overlayIcon={<BsCodeSlash />}
+                    overlayLink='https://github.com/xDepcio/boss-monster-web'
                 />
             </div>
             <p className={robotoMono.className + " projects-tag inner reveal"}>{'</personal projects'}<span>{'>'}</span></p>
@@ -52,6 +56,7 @@ export default function Projects() {
                     title='Chess in C++'
                     overlayText='See code'
                     overlayIcon={<BsCodeSlash />}
+                    overlayLink='https://github.com/xDepcio/chess-cpp'
                 />
                 <ProjectsPane
                     description='Flashcards app made from scratch in Python with PyQt for GUI.'
@@ -59,6 +64,7 @@ export default function Projects() {
                     title='Flashcards in Python'
                     overlayText='See code'
                     overlayIcon={<BsCodeSlash />}
+                    overlayLink='https://github.com/xDepcio/projekt-studia-flashcards'
                 />
                 <ProjectsPane
                     description='App made to help visually impaired people with daily activities by scanning NFC tags labeled to objects.'
@@ -66,6 +72,7 @@ export default function Projects() {
                     title='Mobile app'
                     overlayText='See code'
                     overlayIcon={<BsCodeSlash />}
+                    overlayLink='https://github.com/xDepcio/native-app-blind'
                 />
             </div>
             <p className={robotoMono.className + " projects-tag inner reveal"}>{'</study related projects'}<span>{'>'}</span></p>
