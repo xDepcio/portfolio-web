@@ -14,7 +14,7 @@ export default function SingleFullProject({ title, desc, img, inList, missingLis
             <Image src={img} alt='sdas' width={500} height={200} />
             <div className="big-project-header-wrapper">
                 <h3 className="big-project-header leading-[100%]">{title}</h3>
-                <Link className="code-project whitespace-nowrap" href={repoLink}>
+                <Link className="code-project whitespace-nowrap" href={repoLink} target="_blank">
                     see code
                     <BsCodeSlash />
                 </Link>
