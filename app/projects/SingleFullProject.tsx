@@ -6,15 +6,15 @@ import { BsCodeSlash } from 'react-icons/bs'
 import { ReactNode } from "react";
 import Link from "next/link";
 
-export default function SingleFullProject({ title, desc, img, inList, missingList }:
-    { title: string, desc: string, img: string, inList: [string, ReactNode][], missingList: [string, ReactNode][] }
+export default function SingleFullProject({ title, desc, img, inList, missingList, repoLink }:
+    { title: string, desc: string, img: string, inList: [string, ReactNode][], missingList: [string, ReactNode][], repoLink: string }
 ) {
     return (
         <div className='projects-page-single-project reveal'>
             <Image src={img} alt='sdas' width={500} height={200} />
             <div className="big-project-header-wrapper">
                 <h3 className="big-project-header leading-[100%]">{title}</h3>
-                <Link className="code-project whitespace-nowrap" href={'/'}>
+                <Link className="code-project whitespace-nowrap" href={repoLink}>
                     see code
                     <BsCodeSlash />
                 </Link>

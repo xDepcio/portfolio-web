@@ -15,7 +15,7 @@ export default function AboutPage() {
             <section className="reveal flex gap-3 items-center justify-center p-4">
                 <Image
                     className="reveal aspect-square flex-grow rounded-full"
-                    src={'/personal/profile-temp-sqr.jpg'}
+                    src={'/personal/me-img-cropped.png'}
                     alt="profile picture"
                     width={100}
                     height={100}
