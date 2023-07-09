@@ -106,23 +106,23 @@ export default function AboutPage() {
                     <LuContact />
                 </h3>
                 <div className="cv-contancts mt-2">
-                    <Link href={'/'} className="flex gap-2 items-center">
+                    <Link href={'https://portfolio.adrwal.pl/'} className="flex gap-2 items-center">
                         <TbWorldWww />
                         <p>Website - portfolio.adrwal.pl</p>
                     </Link>
-                    <Link href={'/'} className="flex gap-2 items-center">
+                    <Link href={'https://github.com/xDepcio'} className="flex gap-2 items-center">
                         <BsGithub />
                         <p>Github - xDepcio</p>
                     </Link>
-                    <Link href={'/'} className="flex gap-2 items-center">
+                    <Link href={'https://gitlab-stud.elka.pw.edu.pl/adrwal'} className="flex gap-2 items-center">
                         <LuGitlab />
                         <p>Gitlab - adrwal</p>
                     </Link>
-                    <Link href={'/'} className="flex gap-2 items-center">
+                    <Link href={'https://www.linkedin.com/in/aleksander-drwal-a16011282/'} className="flex gap-2 items-center">
                         <LuLinkedin />
                         <p>LinkedIn - Aleksander Drwal</p>
                     </Link>
-                    <Link href={'/'} className="flex gap-2 items-center">
+                    <Link href={'mailto:olek.drwal@gmail.com'} className="flex gap-2 items-center">
                         <BiEnvelope />
                         <p>Email - olek.drwal@gmail.com</p>
                     </Link>
