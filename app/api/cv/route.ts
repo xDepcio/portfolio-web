@@ -1,7 +1,7 @@
 // Get CV
 export async function GET() {
     const PDF_URL =
-        "https://drive.google.com/u/0/uc?id=1oksCSMv4vluXljJjTnugEg0iYKeNAVkL&export=download";
+        "https://drive.google.com/uc?id=10l2NCyV3r06RNfWOq4QTti_-rTDtMFY0&export=download";
 
     const response = await fetch(PDF_URL);
 
