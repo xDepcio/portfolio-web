@@ -23,14 +23,14 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={inter.className}>
-                <NextTopLoader color='#ff6b6b' />
+                {/* <NextTopLoader color='#ff6b6b' /> */}
                 <Blobs />
                 <Toaster />
-                <Navbar />
-                <ScrollUp />
+                {/* <Navbar /> */}
+                {/* <ScrollUp /> */}
                 <FadeAnimationHandle />
                 {children}
-                <Footer />
+                {/* <Footer /> */}
             </body>
         </html>
     )
