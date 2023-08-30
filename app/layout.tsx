@@ -7,6 +7,7 @@ import Footer from '@/components/Footer'
 import { Toaster } from 'react-hot-toast'
 import Blobs from '@/components/Blobs'
 import NextTopLoader from 'nextjs-toploader';
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -29,6 +30,7 @@ export default function RootLayout({
                 <Navbar />
                 <ScrollUp />
                 <FadeAnimationHandle />
+                <Analytics />
                 {children}
                 <Footer />
             </body>
